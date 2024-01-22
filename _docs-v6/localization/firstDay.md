@@ -11,7 +11,16 @@ Integer, *default*: `0` (Sunday)
 The default value depends on the current [locale](locale).
 
 The value must be a number that represents the day of the week.
-
 Sunday=`0`, Monday=`1`, Tuesday=`2`, etc.
+
+For exemple : 
+
+```js
+let calendar = new Calendar(calendarEl, {
+  ...
+  firstDay: 1,
+});
+...
+```
 
 If [weekNumberCalculation](weekNumberCalculation) is set to `'ISO'`, this option defaults to `1` (Monday).
